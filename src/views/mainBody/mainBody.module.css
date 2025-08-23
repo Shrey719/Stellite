@@ -1,0 +1,56 @@
+.loadingBackground {
+  background-color: var(--color1);
+  width: 100vw;
+  height: 100vh;
+}
+
+.versionLogo {
+  margin-left: 10%;
+}
+
+.versionLogo a {
+  color: white;
+  text-decoration: none;
+}
+
+.settings {
+  position: absolute;
+  right: 0;
+  margin-right: 13%;
+  font-size: calc(10px + 1vmin);
+}
+
+.settings img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.more {
+  position: absolute;
+  right: 0;
+  margin-right: 5%;
+  font-size: calc(10px + 1vmin);
+}
+
+.more img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.more a,
+.settings a {
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+.more a:hover,
+.settings a:hover {
+  transform: scale(1.05);
+  display: inline-block;
+  color: #dddddd;
+}

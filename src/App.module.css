@@ -1,0 +1,50 @@
+:root {
+  /*Yes this is the color pallete*/
+  --color1: #1e1e2f;
+  --color2: #292940;
+  --color3: #3a3a6e;
+
+  --text1: white;
+
+  --font1:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.body {
+  background-color: var(--color2);
+  width: 100vw;
+  height: 90vmin;
+  position: absolute;
+  bottom: 0;
+}
+
+.logo {
+  animation: logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.header {
+  background-color: var(--color1);
+  width: 100vw;
+  height: 10vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 1.7vmin);
+  color: white;
+}
+
+.link {
+  color: #b318f0;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
