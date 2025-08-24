@@ -34,7 +34,7 @@ function Settings() {
     <div class={styles.body}>
       <div class={settings.settingsElm}>
         <h1>Rewriter</h1>
-        <p>Choose the rewriter that works best for the site you want to use</p>
+        <p>Choose the rewriter that works best for the site you want to use</p><br/>
         <select id="rewriteSelect" onChange={setRewriter}>
           <option value="UV">Ultraviolet</option>
           <option value="scram">Scramjet (soon) </option>
@@ -42,7 +42,7 @@ function Settings() {
       </div>
       <div class={settings.settingsElm}>
         <h1>Search engine</h1>
-        <p>Choose the search engine that feels the best for you</p>
+        <p>Choose the search engine that feels the best for you</p><br/>
         <select id="engineSelect" onChange={setEngine}>
           <option value="https://www.startpage.com/sp/search?q=">
             Startpage

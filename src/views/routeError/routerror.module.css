@@ -13,7 +13,7 @@
 
 
 .body button {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255 255, 255, 0.08);
     backdrop-filter: blur(12px) saturate(180%);
     -webkit-backdrop-filter: blur(12px) saturate(180%);
 
@@ -23,12 +23,12 @@
 
     transition: all 0.3s ease;
 
-    border: none;
     width: 10%;
     height: 5%;
     margin: 20px;
     border-radius: 20px;
     color: white;
+    border: none;
 }
 
 .body button:hover {
