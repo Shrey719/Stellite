@@ -14,7 +14,7 @@
 .body {
   background-color: var(--color2);
   width: 100vw;
-  height: 90vmin;
+  height: 90vh;
   position: absolute;
   bottom: 0;
 }
@@ -28,7 +28,7 @@
 .header {
   background-color: var(--color1);
   width: 100vw;
-  height: 10vmin;
+  height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
