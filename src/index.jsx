@@ -8,8 +8,9 @@ import App from "./App";
 import routeError from "./views/routeError/routeError.jsx";
 import Framer from "./views/framer/framer.jsx";
 import Home from "./views/home/home.jsx";
-import Credits from "./views/credits/credits.jsx"
-import Faq from "./views/faq/faq.jsx"
+import Credits from "./views/credits/credits.jsx";
+import Faq from "./views/faq/faq.jsx";
+import Settings from "./views/settings/settings.jsx";
 
 const root = document.getElementById("root");
 
@@ -25,6 +26,7 @@ render(
       {/** Stuff that uses the header + loadingscreen */}
       <Route path="/" component={App}>
         <Route path="/" component={Home}></Route>
+        <Route path="/settings/" component={Settings}></Route>
         <Route path="/credits/" component={Credits}></Route>
         <Route path="/faq/" component={Faq}></Route>
       </Route>
