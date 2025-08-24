@@ -31,7 +31,7 @@ function Settings() {
     localStorage.setItem("stlconfig", JSON.stringify(config));
   }
   return (
-    <div class={styles.body} style="display: flex; flex-direction: collum;">
+    <div class={styles.body}>
       <div class={settings.settingsElm}>
         <h1>Rewriter</h1>
         <p>Choose the rewriter that works best for the site you want to use</p>

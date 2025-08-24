@@ -1,11 +1,12 @@
 .settingsElm {
   background-color: var(--color3);
-  width: 30%;
+  width: 29%;
   height: 30%;
   text-align: center;
   color: #eee;
   margin: 30px;
   border-radius: 10px;
+  float: left;
 }
 
 .settingsElm select {
