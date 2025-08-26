@@ -1,4 +1,7 @@
 function Snowflake() {
+  if (!localStorage.getItem("stlconfig")) {
+    return null;
+  }
   if (JSON.parse(localStorage.getItem("stlconfig")).snowflake == "yes") {
     return (
       <iframe

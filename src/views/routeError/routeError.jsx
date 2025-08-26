@@ -1,5 +1,5 @@
 import { createSignal, onMount } from "solid-js";
-import styles from "./routerror.module.css"
+import styles from "./routerror.module.css";
 function routeError() {
   const [error, setError] = createSignal();
   const [url, setUrl] = createSignal();
@@ -12,9 +12,16 @@ function routeError() {
   return (
     <div class={styles.body}>
       <h1>Error</h1>
-      
-      <span>Failed to load {url}</span><br/>
-      <button onClick={() => {location.reload()}}>Reload</button>
+
+      <span>Failed to load {url}</span>
+      <br />
+      <button
+        onClick={() => {
+          location.reload();
+        }}
+      >
+        Reload
+      </button>
       <br />
       <span>{error}</span>
     </div>
