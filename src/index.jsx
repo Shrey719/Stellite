@@ -53,7 +53,12 @@ if ("serviceWorker" in navigator) {
       console.error("Could not connect to wisp " + err);
     }
     try {
-      await navigator.serviceWorker.register("/stl.sw.js"); 
+      let serviceworker = await navigator.serviceWorker.getRegistrations();
+      if (serviceworker.length == 0) {
+        await navigator.serviceWorker.register("/stl.sw.js"); 
+      } else {
+        console.log("SW already loaded");
+      }
     } catch (err) {
       console.log("Could not register sw", err);
     }
