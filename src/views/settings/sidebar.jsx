@@ -1,10 +1,9 @@
 import { render } from "solid-js/web";
 import styles from "./sidebar.module.css";
 import ProxySettings from "./categories/proxy.jsx";
-import Filesystem from "./categories/filesystem.jsx";
-import Misc from "./categories/misc.jsx"
+import Styling from "./categories/styling.jsx";
+import Misc from "./categories/misc.jsx";
 function Sidebar() {
-
   return (
     <div class={styles.sidebar}>
       <div class={styles.selector}>
@@ -21,15 +20,17 @@ function Sidebar() {
         </span>
       </div>
       <div class={styles.selector}>
-        <span 
+        <span
           onClick={() => {
             const container = document.getElementById("settingsContent");
             if (container) {
               container.innerHTML = "";
-              render(() => <Filesystem />, container);
+              render(() => <Styling />, container);
             }
           }}
-        >Filesystem</span>
+        >
+          Styling
+        </span>
       </div>
       <div class={styles.selector}>
         <span
@@ -40,7 +41,9 @@ function Sidebar() {
               render(() => <Misc />, container);
             }
           }}
-        >Miscellaneous</span>
+        >
+          Miscellaneous
+        </span>
       </div>
     </div>
   );

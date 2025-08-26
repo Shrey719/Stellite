@@ -1,8 +1,5 @@
 /**
- * UV serviceworker
- * and maybe nohost and Scramjet
- * maybe
- * keyword maybe
+ * UV serviceworker + maybe scramjet 
  * no promises
  */
 

@@ -53,8 +53,7 @@ if ("serviceWorker" in navigator) {
       console.error("Could not connect to wisp " + err);
     }
     try {
-      const reg = await navigator.serviceWorker.register("/stl.sw.js"); // stl.sw.js is the main SW
-      console.log("SW Registered");
+      await navigator.serviceWorker.register("/stl.sw.js"); 
     } catch (err) {
       console.log("Could not register sw", err);
     }
@@ -70,7 +69,7 @@ if (!localStorage.getItem("stlconfig")) {
       engine: "https://www.startpage.com/sp/search?q=",
       snowflake: "no", // if its on, users will run a tor snowflake node in the background
       fsEnabled: "no", // coming soon
-      memoryMonitoring: "no"
+      memoryMonitoring: "no",
     }),
   );
 }

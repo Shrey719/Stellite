@@ -63,14 +63,13 @@
   transition: all 0.3s ease;
 }
 
-.settingsElm button:hover { 
+.settingsElm button:hover {
   background-color: rgba(0, 0, 0, 0.18);
 }
 
-.settingsElm select:hover { 
+.settingsElm select:hover {
   background-color: rgba(0, 0, 0, 0.18);
 }
-
 
 .settingsElm option {
   background: var(--color1);
