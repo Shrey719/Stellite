@@ -1,14 +1,14 @@
 import styles from "./mainBody.module.css";
 import gear from "../../assets/gear.svg";
 import dots from "../../assets/dots.svg";
-
+import ObfuscText from "../../lib/obfuscatedText";
 import { A } from "@solidjs/router";
 
 function Header() {
   return (
     <>
       <div class={styles.versionLogo}>
-        <A href="/">Stellite v1.0.0</A>
+        <A href="/"><ObfuscText>Stellite v1.0.0</ObfuscText></A>
       </div>
 
       <div class={styles.settings}>

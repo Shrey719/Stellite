@@ -1,7 +1,7 @@
 import { onMount } from "solid-js";
 import styles from "./home.module.css";
 import { openProxied } from "../../lib/proxy.js";
-
+import ObfuscText from "../../lib/obfuscatedText";
 function Home() {
   // anyways this is super hacky and you shouldnt do it
   onMount(() => {
@@ -22,7 +22,7 @@ function Home() {
     <div id="mainBody">
       <div class={styles.glassContainer}>
         <div class={styles.body}>
-          <h1>STELLITE</h1>
+          <ObfuscText as="h1">STELLITE</ObfuscText>
           <input
             placeholder="Type a URL here or enter a search query"
             onKeyDown={(e) => {

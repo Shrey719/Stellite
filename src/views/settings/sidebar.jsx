@@ -3,6 +3,8 @@ import styles from "./sidebar.module.css";
 import ProxySettings from "./categories/proxy.jsx";
 import Styling from "./categories/styling.jsx";
 import Misc from "./categories/misc.jsx";
+import ObfuscText from '../../lib/obfuscatedText.jsx'
+
 function Sidebar() {
   return (
     <div class={styles.sidebar}>
@@ -16,7 +18,7 @@ function Sidebar() {
             }
           }}
         >
-          Proxy
+          <ObfuscText as="span">Proxy</ObfuscText>
         </span>
       </div>
       <div class={styles.selector}>

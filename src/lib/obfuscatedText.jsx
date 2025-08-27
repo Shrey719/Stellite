@@ -36,8 +36,8 @@ function obfuscate(text) {
 }
 
 
-// USAGE - 
-// <ObfuscText text="some text" as="h1" class={someClass}/>
+// usage:
+// <ObfuscText as="h1">some text or something idk</ObfuscText>
 function ObfuscText(props) { 
   let content = ""
   if (typeof props.children === "string") {
