@@ -8,7 +8,7 @@ function unregServiceworkers() {
       .getRegistrations()
       .then((registrations) => {
         for (let registration of registrations) {
-          registration.unregister()
+          registration.unregister();
         }
       })
       .catch((err) =>

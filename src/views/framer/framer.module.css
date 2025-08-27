@@ -1,0 +1,46 @@
+.mainframe {
+  margin: 0;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+}
+
+.omnibar {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 10%;
+  background-color: var(--color1);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.searchBar {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: none;
+  outline: none;
+  width: 40%;
+  height: 5vmin;
+  text-align: center;
+  color: white;
+  font-family: var(--font1);
+  font-size: 16px;
+
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.3),
+    0 8px 20px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease;
+
+  border-radius: 5px;
+}

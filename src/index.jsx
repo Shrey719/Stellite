@@ -55,7 +55,7 @@ if ("serviceWorker" in navigator) {
     try {
       let serviceworker = await navigator.serviceWorker.getRegistrations();
       if (serviceworker.length == 0) {
-        await navigator.serviceWorker.register("/stl.sw.js"); 
+        await navigator.serviceWorker.register("/stl.sw.js");
       } else {
         console.log("SW already loaded");
       }
