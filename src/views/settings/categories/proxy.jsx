@@ -1,4 +1,5 @@
 import settings from "../settings.module.css";
+import ObfuscText from '../../../lib/obfuscatedText.jsx'
 
 import { onMount } from "solid-js";
 
@@ -34,13 +35,13 @@ function ProxySettings() {
 
   return (
     <div>
-      <h1 class={settings.desc}>Proxy settings</h1>
+      <ObfuscText class={settings.desc} as="h1">Proxy Settings</ObfuscText>
       <div class={settings.settingsElm}>
-        <h1>Rewriter</h1>
-        <p>Choose the rewriter that works best for the site you want to use</p>
+        <ObfuscText as="h1">Rewriter</ObfuscText>
+        <ObfuscText as="p">Choose the rewriter that works the best for the site you want to use</ObfuscText>
         <select id="rewriteSelect" onChange={setRewriter}>
-          <option value="UV">Ultraviolet</option>
-          <option value="scram">Scramjet (soon) </option>
+          <ObfuscText as="option" value="UV">Ultraviolet</ObfuscText>
+          <ObfuscText as="option" value="scram">Scramjet</ObfuscText>
         </select>
       </div>
 

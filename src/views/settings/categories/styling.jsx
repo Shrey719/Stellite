@@ -1,5 +1,5 @@
 import settings from "../settings.module.css";
-
+import ObfuscText from '../../../lib/obfuscatedText.jsx'
 
 function Styling() {
   return (
@@ -7,7 +7,7 @@ function Styling() {
       <h1 class={settings.desc}>Theme (coming soon)</h1>
       <div class={settings.settingsElm}>
         <h1>Standard</h1>
-        <p>The standard theme that comes with Stellite</p>
+        <ObfuscText as="p">The standard theme that comes with stellite</ObfuscText>
         <button>Enable</button>
       </div>
     </div>
