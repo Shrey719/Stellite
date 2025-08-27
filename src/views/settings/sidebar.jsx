@@ -3,7 +3,7 @@ import styles from "./sidebar.module.css";
 import ProxySettings from "./categories/proxy.jsx";
 import Styling from "./categories/styling.jsx";
 import Misc from "./categories/misc.jsx";
-import ObfuscText from '../../lib/obfuscatedText.jsx'
+import ObfuscText from "../../lib/obfuscatedText.jsx";
 
 function Sidebar() {
   return (

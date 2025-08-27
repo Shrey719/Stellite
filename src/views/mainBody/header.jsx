@@ -8,7 +8,9 @@ function Header() {
   return (
     <>
       <div class={styles.versionLogo}>
-        <A href="/"><ObfuscText>Stellite v1.0.0</ObfuscText></A>
+        <A href="/">
+          <ObfuscText>Stellite v1.0.0</ObfuscText>
+        </A>
       </div>
 
       <div class={styles.settings}>
