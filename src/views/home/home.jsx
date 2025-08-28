@@ -1,6 +1,6 @@
 import { onMount } from "solid-js";
 import styles from "./home.module.css";
-import { openProxied } from "../../lib/proxy.js";
+import { globalProxy } from "../../lib/proxy.js";
 import ObfuscText from "../../lib/obfuscatedText";
 function Home() {
   // anyways this is super hacky and you shouldnt do it
@@ -29,16 +29,16 @@ function Home() {
               if (e.key === "Enter") {
                 e.preventDefault();
                 if (httpslessdomain.test(e.currentTarget.value)) {
-                  openProxied("https://" + e.currentTarget.value);
+                  globalProxy.open("https://" + e.currentTarget.value);
                 } else if (
                   e.currentTarget.value.startsWith("https://") ||
                   e.target.value.startsWith("http://")
                 ) {
-                  openProxied(e.currentTarget.value);
+                  globalProxy.open(e.currentTarget.value);
                 } else {
                   let config = JSON.parse(localStorage.getItem("stlconfig"));
                   let builturl = config.engine + e.currentTarget.value;
-                  openProxied(builturl);
+                  globalProxy.open(builturl);
                 }
               }
             }}
