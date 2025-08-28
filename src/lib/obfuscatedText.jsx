@@ -5,7 +5,7 @@ import { createMemo } from "solid-js";
 import { Dynamic } from "solid-js/web";
 
 const ZeroWidths = ["\u200B", "\u200C", "\u200D", "\uFEFF"];
-const Controls = ["\u200E", "\u200F", "\u00AD"];
+const Controls = ["\u200E", "\u200F"];
 
 //0-9, . - _ /
 // should not be obfuscated
