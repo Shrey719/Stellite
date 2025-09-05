@@ -23,7 +23,7 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 render(
   () => (
     <Router>
-      {/** Stuff that uses the header + loadingscreen */}
+      {/** APP is the default stuff (header + loading screen + snowflake off/on ) */}
       <Route path="/" component={App}>
         <Route path="/" component={Home}></Route>
         <Route path="/settings/" component={Settings}></Route>
@@ -56,7 +56,6 @@ if ("serviceWorker" in navigator) {
       let serviceworker = await navigator.serviceWorker.getRegistrations();
       if (serviceworker.length == 0) {
         await navigator.serviceWorker.register("/stl.sw.js");
-        await navigator.serviceWorker.register("/mirr/sw.bundle.js");
       } else {
         console.log("SW already loaded");
       }

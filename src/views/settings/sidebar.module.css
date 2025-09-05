@@ -1,9 +1,11 @@
 .sidebar {
   background: var(--color1);
-  border-top: 1.5px solid black;
   width: 16%;
-  height: 100%;
+  height: 98%;
   max-width: 16%;
+  margin-left: 1vw;
+  border-radius: calc(5px + 1vmin);
+  box-shadow: 1px 3px 5px black;
   float: left;
 }
 

@@ -15,8 +15,10 @@ import Snowflake from "./views/mainBody/snowflake.jsx"; // support for opt-in sn
 function App(props) {
   return (
     <div>
-      <div class={styles.header}>
-        <Header />
+      <div class={styles.headerWrapper}>
+        <div class={styles.header}>
+          <Header />
+        </div>
       </div>
       <div class={styles.body}>
         <Loading />
