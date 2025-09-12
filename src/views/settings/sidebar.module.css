@@ -27,4 +27,7 @@
 
 .selector span:hover {
   color: #ddd;
+  transform: scale(1.05);
+  display: inline-block;
 }
+

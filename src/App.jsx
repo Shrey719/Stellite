@@ -1,7 +1,6 @@
 import styles from "./App.module.css";
 import Loading from "./views/mainBody/loading.jsx";
 import Header from "./views/mainBody/header.jsx";
-import Snowflake from "./views/mainBody/snowflake.jsx"; // support for opt-in snowflake nodes
 // has the loading screen + header
 // everything else is up to how you use it
 // in JSX :
@@ -22,7 +21,6 @@ function App(props) {
       </div>
       <div class={styles.body}>
         <Loading />
-        <Snowflake />
         {props.children}
       </div>
     </div>

@@ -10,11 +10,6 @@ function ProxySettings() {
 
     const engineSelect = document.getElementById("engineSelect");
     engineSelect.value = JSON.parse(localStorage.getItem("stlconfig")).engine;
-
-    const snowflakeSelect = document.getElementById("snowflakeSelect");
-    snowflakeSelect.value = JSON.parse(
-      localStorage.getItem("stlconfig"),
-    ).snowflake;
   });
 
   function setRewriter(event) {
@@ -26,11 +21,7 @@ function ProxySettings() {
     let config = JSON.parse(localStorage.getItem("stlconfig"));
     config.engine = event.target.value;
     localStorage.setItem("stlconfig", JSON.stringify(config));
-  }
-  function setSnowflake(event) {
-    let config = JSON.parse(localStorage.getItem("stlconfig"));
-    config.snowflake = event.target.value;
-    localStorage.setItem("stlconfig", JSON.stringify(config));
+
   }
 
   return (
@@ -62,19 +53,6 @@ function ProxySettings() {
           </option>
           <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
           <option value="https://www.mojeek.com/search?q=">Mojeek</option>
-        </select>
-      </div>
-
-      <div class={settings.settingsElm}>
-        <h1>Snowflake</h1>
-        <p>
-          Help people in countries such as Iran, China, or Turkmenistan get
-          uncensored access to the internet
-        </p>
-
-        <select id="snowflakeSelect" onChange={setSnowflake}>
-          <option value="yes">Yes, run a snowflake node on my computer</option>
-          <option value="no">Do not run a snowflake node on my computer</option>
         </select>
       </div>
     </div>
