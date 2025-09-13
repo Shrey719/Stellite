@@ -1,8 +1,9 @@
 import styles from "./mainBody.module.css";
 import gear from "../../assets/gear.svg";
-import dots from "../../assets/dots.svg";
 import ObfuscText from "../../lib/obfuscatedText";
 import { A } from "@solidjs/router";
+import { createSignal } from "solid-js";
+
 
 function Header() {
   return (
@@ -15,15 +16,7 @@ function Header() {
 
       <div class={styles.settings}>
         <A href="/settings/">
-          Settings
           <img src={gear}></img>
-        </A>
-      </div>
-
-      <div class={styles.more}>
-        <A href="/more/">
-          More
-          <img src={dots}></img>
         </A>
       </div>
     </>

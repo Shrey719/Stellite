@@ -25,9 +25,14 @@ function Misc() {
     ).memoryMonitoring;
   });
 
-  function setMemMonitor(event) {
+  function setMemMonitor() {
     let config = JSON.parse(localStorage.getItem("stlconfig"));
-    config.memoryMonitoring = event.target.value;
+    if (!config.memoryMonitoring) {
+      document.getElementById("memMon").innerText = "Disable"
+    } else {
+      document.getElementById("memMon").innerText = "Enable"
+    }
+    config.memoryMonitoring = !config.memoryMonitoring;
     localStorage.setItem("stlconfig", JSON.stringify(config));
   }
   return (
@@ -36,14 +41,9 @@ function Misc() {
       <div class={settings.settingsElm}>
         <h1>Memory monitoring</h1>
         <p>Monitor the amount of memory used by a tab in stellite</p>
-        <select id="memMon" onChange={setMemMonitor}>
-          <option value="no">
-            Do not monitor the amount of memory used in a tab
-          </option>
-          <option value="yes">
-            Monitor the amount of memory used in a tab
-          </option>
-        </select>
+        <button id="memMon" onClick={setMemMonitor}>
+          Enable
+        </button>
       </div>
 
       <div class={settings.settingsElm}>

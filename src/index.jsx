@@ -72,9 +72,7 @@ if (!localStorage.getItem("stlconfig")) {
       router: "UV",
       transport: "epoxy",
       engine: "https://www.startpage.com/sp/search?q=",
-      snowflake: "no", // if its on, users will run a tor snowflake node in the background
-      fsEnabled: "no", // coming soon
-      memoryMonitoring: "no",
+      memoryMonitoring: "false",
     }),
   );
 }
