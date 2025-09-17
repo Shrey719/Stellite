@@ -12,5 +12,14 @@ Run  <code>npm run start</code>  to start Stellite.
     <li>Allows a safe enviorment to download programs such as the Tails or the Tor Browser</li>
 </ul>
 
+# Technlogies 
+Stellie uses these technologies for proxying    
+<ul>
+    <li>Ultraviolet (note that UV is depricated and will be replaced with scramjet soon)</li>
+    <li>Epoxy</li>
+    <li>Baremux</li>
+    <li>Wisp server</li>
+</ul>
+
 # Join the discord!
 https://discord.gg/qyDkXEUpcf
