@@ -26,9 +26,12 @@ function ProxySettings() {
 
   return (
     <div>
-      <ObfuscText class={settings.desc} as="h1">
-        Proxy Settings
-      </ObfuscText>
+      <h1 class={settings.desc}>
+        <ObfuscText class={settings.desc} as="span">
+          Proxy
+        </ObfuscText>
+        <hr/>
+      </h1>
       <div class={settings.settingsElm}>
         <ObfuscText as="h1">Rewriter</ObfuscText>
         <ObfuscText as="p">
