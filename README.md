@@ -15,7 +15,7 @@ Run  <code>npm run start</code>  to start Stellite.
 # Technlogies 
 Stellie uses these technologies for proxying    
 <ul>
-    <li>Ultraviolet (note that UV is depricated and will be replaced with scramjet soon)</li>
+    <li>Ultraviolet (note that UV is depricated and will be replaced with puter's browser.js soon)</li>
     <li>Epoxy</li>
     <li>Baremux</li>
     <li>Wisp server</li>
