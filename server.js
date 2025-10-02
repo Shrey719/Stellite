@@ -1,3 +1,5 @@
+// stole from dusk which stole from krypton which stole from mochaproxy
+
 import { consola } from 'consola'
 import express from 'express'
 import wisp from 'wisp-server-node'
@@ -14,7 +16,7 @@ consola.start('Building frontend')
 await build()
 
 app.use(express.static('dist'))
-
+// use an old express version b/c I have no clue how the newer ones work and it crashes with this
 app.get('*', (_req, res) => {
   res.sendFile(path.resolve('dist', 'index.html'))
 })

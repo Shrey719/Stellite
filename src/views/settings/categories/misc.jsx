@@ -19,33 +19,11 @@ function unregServiceworkers() {
 
 function Misc() {
   onMount(() => {
-    const rewriterSelect = document.getElementById("memMon");
-    rewriterSelect.value = JSON.parse(
-      localStorage.getItem("stlconfig"),
-    ).memoryMonitoring;
   });
 
-  function setMemMonitor() {
-    let config = JSON.parse(localStorage.getItem("stlconfig"));
-    if (!config.memoryMonitoring) {
-      document.getElementById("memMon").innerText = "Disable"
-    } else {
-      document.getElementById("memMon").innerText = "Enable"
-    }
-    config.memoryMonitoring = !config.memoryMonitoring;
-    localStorage.setItem("stlconfig", JSON.stringify(config));
-  }
   return (
     <div>
-      <h1 class={settings.desc}>Miscellaneous Settings</h1>
-      <div class={settings.settingsElm}>
-        <h1>Memory monitoring</h1>
-        <p>Monitor the amount of memory used by a tab in stellite</p>
-        <button id="memMon" onClick={setMemMonitor}>
-          Enable
-        </button>
-      </div>
-
+      <h1 class={settings.desc}>Miscellaneous<hr/></h1>
       <div class={settings.settingsElm}>
         <h1>Reset Website</h1>
         <p>
