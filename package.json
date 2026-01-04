@@ -1,12 +1,12 @@
 {
-  "name": "vite-template-solid",
-  "version": "0.0.0",
+  "name": "stellite",
+  "version": "1.0.0",
   "description": "",
   "type": "module",
   "scripts": {
     "start": "node server.js",
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm i && vite build",
     "serve": "vite preview"
   },
   "license": "MIT",
