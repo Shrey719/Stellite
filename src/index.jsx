@@ -42,13 +42,20 @@ async function initWisp(server, transport) {
   const connection = new BareMux.BareMuxConnection("/baremux/worker.js");
   await connection.setTransport(transport, [{ wisp: server }]);
 }
+let localwisp;
+if (window.location.protocol === "http:") {
+  localwisp = "ws://" + window.location.host + "/wisp/"
+} else {
+  localwisp = "wss://" + window.location.host + "/wisp/"
+}
 
+console.log("using " + localwisp)
 // UV serviceworker (And nohost and scramjet soon maybe no promises)
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", async () => {
     try {
-      initWisp("wss://wisp.mercurywork.shop/", "/epoxy/index.mjs");
+      initWisp(localwisp, "/epoxy/index.mjs");
     } catch {
       console.error("Could not connect to wisp " + err);
     }
