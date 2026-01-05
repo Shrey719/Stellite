@@ -6,9 +6,9 @@
 
   --text1: white;
 
-  --font1: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
-             "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-
+  --font1:
+    "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
 .body {

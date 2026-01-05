@@ -4,8 +4,9 @@ import ObfuscText from "../../../lib/obfuscatedText.jsx";
 function Styling() {
   return (
     <div>
-      <h1 class={settings.desc}>Theme
-        <hr/>
+      <h1 class={settings.desc}>
+        Theme
+        <hr />
       </h1>
       <div class={settings.settingsElm}>
         <h1>Standard</h1>

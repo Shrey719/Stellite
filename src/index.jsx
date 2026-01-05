@@ -44,12 +44,12 @@ async function initWisp(server, transport) {
 }
 let localwisp;
 if (window.location.protocol === "http:") {
-  localwisp = "ws://" + window.location.host + "/wisp/"
+  localwisp = "ws://" + window.location.host + "/wisp/";
 } else {
-  localwisp = "wss://" + window.location.host + "/wisp/"
+  localwisp = "wss://" + window.location.host + "/wisp/";
 }
 
-console.log("using " + localwisp)
+console.log("using " + localwisp);
 // UV serviceworker (And nohost and scramjet soon maybe no promises)
 
 if ("serviceWorker" in navigator) {

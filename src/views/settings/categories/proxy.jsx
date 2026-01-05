@@ -21,7 +21,6 @@ function ProxySettings() {
     let config = JSON.parse(localStorage.getItem("stlconfig"));
     config.engine = event.target.value;
     localStorage.setItem("stlconfig", JSON.stringify(config));
-
   }
 
   return (
@@ -30,7 +29,7 @@ function ProxySettings() {
         <ObfuscText class={settings.desc} as="span">
           Proxy
         </ObfuscText>
-        <hr/>
+        <hr />
       </h1>
       <div class={settings.settingsElm}>
         <ObfuscText as="h1">Rewriter</ObfuscText>

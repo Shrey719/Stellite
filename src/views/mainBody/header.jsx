@@ -4,7 +4,6 @@ import ObfuscText from "../../lib/obfuscatedText";
 import { A } from "@solidjs/router";
 import { createSignal } from "solid-js";
 
-
 function Header() {
   return (
     <>

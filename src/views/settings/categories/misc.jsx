@@ -18,12 +18,14 @@ function unregServiceworkers() {
 }
 
 function Misc() {
-  onMount(() => {
-  });
+  onMount(() => {});
 
   return (
     <div>
-      <h1 class={settings.desc}>Miscellaneous<hr/></h1>
+      <h1 class={settings.desc}>
+        Miscellaneous
+        <hr />
+      </h1>
       <div class={settings.settingsElm}>
         <h1>Reset Website</h1>
         <p>
