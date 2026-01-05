@@ -61,8 +61,11 @@ function Home() {
             }}
           />
         </div>
+        <a on:click={() => {window.location.href = '/?r=https://discord.gg/UU9s35NSay'}} class={styles.disc}> <img src="/img/discord.png" width="50px" height="50px"/> </a>
+        <a on:click={() => {window.location.href = '/?r=https://github.com/Shrey719/stellite'}} class={styles.git}> <img src="/img/github.png" width="50px" height="50px"/> </a>
       </div>
     </div>
+
     </>
   );
 }
