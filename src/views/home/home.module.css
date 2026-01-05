@@ -4,6 +4,9 @@
   color: white;
 }
 
+.hideAd:checked+div {
+  display: none;
+}
 .glassContainer {
   height: 100vh;
   position: relative;
