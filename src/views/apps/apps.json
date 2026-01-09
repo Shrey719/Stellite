@@ -1,0 +1,22 @@
+[
+    {
+        "category":"Apps",
+        "apps": [
+            {
+                "name":"Youtube",
+                "link":"https://youtube.com/",
+                "img":"/img/a/yt.jpg"
+            },
+            {
+                "name":"Discord",
+                "link":"https://discord.gg",
+                "img":"/img/a/dsc.webp"
+            },
+            {
+                "name":"VSCode",
+                "link":"https://vscode.dev/",
+                "img":"/img/a/vsc.jpg"
+            }
+        ]
+    }
+]

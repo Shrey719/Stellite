@@ -20,7 +20,6 @@ function App(props) {
         </div>
       </div>
       <div class={styles.body}>
-        <Loading />
         {props.children}
       </div>
     </div>

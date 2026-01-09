@@ -1,0 +1,37 @@
+[
+    {
+        "category":"Adventure",
+        "games": [
+            {
+                "name":"Minecraft",
+                "link":"https://eaglercraft.com/",
+                "img":"/img/g/craft.webp"
+            },
+            {
+                "name":"Run 3",
+                "link": "https://en.gameslol.net/data/run-3/index.html",
+                "img":"/img/g/run.jpg"
+            }
+        ]
+    },
+    {
+        "category":"Idle",
+        "games":[
+            {
+                "name":"Cookie Clicker",
+                "link":"https://orteil.dashnet.org/cookieclicker/",
+                "img":"/img/g/clicker.jpg"
+            }
+        ]
+    },
+    {
+        "category": "Multiplayer",
+        "games": [
+            {
+                "name": "Territorial.io",
+                "link":"https://territorial.io/",
+                "img":"/img/g/terri.jpg"
+            }
+        ]
+    }
+]

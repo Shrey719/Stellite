@@ -11,7 +11,8 @@ import Home from "./views/home/home.jsx";
 import Credits from "./views/credits/credits.jsx";
 import Faq from "./views/faq/faq.jsx";
 import Settings from "./views/settings/settings.jsx";
-
+import Games from "./views/games/games.jsx"
+import Apps from "./views/apps/apps.jsx";
 const root = document.getElementById("root");
 
 if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
@@ -29,6 +30,8 @@ render(
         <Route path="/settings/" component={Settings}></Route>
         <Route path="/credits/" component={Credits}></Route>
         <Route path="/faq/" component={Faq}></Route>
+        <Route path="/g/" component={Games}></Route>
+        <Route path="/a/" component={Apps}></Route>
       </Route>
 
       <Route path="/routeErr" component={routeError} />
